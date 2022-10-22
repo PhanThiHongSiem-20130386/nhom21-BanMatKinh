@@ -27,61 +27,65 @@ html {
 }
 
 
-#header .nav {
+#header #nav  {
     display: flex;
     max-height: 70px;
     justify-content: space-between;
 }
-#header .nav-list {
+#header .center-nav {
     max-height: 70px;
 }
 
-#header .nav li {
+#header  li {
     float: left;
     margin-top: 24px;
     list-style-type: none;
     color: #fff;
 }
 
-li.item-nav1 {
+#nav li {
     font-size: 16px;
     font-weight: 500;
     cursor: pointer;
+    position: relative;
 }
 
-#header .item-nav1 a {
+#header li> a {
     color: #fff;
 
 }
-#header .item-nav1:hover a{
+#nav  .nav-list >li:hover > a{
     text-decoration: none;
+    color: #ccc;
 }
 
-#header .nav .center-nav  {
+#header  .center-nav  {
     flex: 2; 
     display: flex;
 }
+.center-nav li {
+    flex: 2;
+    text-decoration: none;
+}
 
-#header .nav .logo,
-#header .nav  .right-nav {
+#header  .logo,
+#header   .right-nav {
     flex: 1;
 }
 
-.item-nav1 {
-    flex: 1;
-}
 
-#header .nav .right-nav {
+
+#header  .right-nav {
     display: flex;
     justify-content: space-between;
 }
 
-#header .nav .right-nav .box {
+#header  .right-nav .box {
     flex: 2;
 }
 
-#header .nav .right-nav .ti-user,
-#header .nav  .right-nav  .ti-shopping-cart{
+#header  .right-nav .ti-user,
+#header #nav  .right-nav  .ti-shopping-cart{
     flex: 1;
     text-align: right;
    
@@ -97,7 +101,15 @@ li.item-nav1 {
    width: 30px;
     height: 50px;
   }
-  
+  .right-nav {
+    display: flex;
+  }
+
+  .box {
+    flex: 2;
+  }
+
+ 
   
   .container-1{
     width: 300px;
@@ -130,4 +142,33 @@ li.item-nav1 {
     font-size: 12px;
     color: #ccc;
 }
-  /* end begin */
+  /* end header */
+  
+
+
+
+
+  /* begin  tròng kính*/
+ 
+
+#nav .subnav {
+    display: inline-block;
+    background-color: #fff;
+    position: absolute;
+    top: 46px;
+    left: 0;
+    min-width: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+}
+#nav .subnav a {
+    color: #000;
+    padding: 0 12px;
+    line-height: 38px;
+    
+}
+#nav .subnav > li:hover > a{
+    text-decoration: none;
+    background-color: #eee;
+}
+
