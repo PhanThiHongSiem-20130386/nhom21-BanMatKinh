@@ -180,4 +180,76 @@ html {
     display: block;
     
 }
+/* ---slide trang chủ*/
+#slideHome{
+    overflow: hidden;
+    width: 1200px;
+    height: 740px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+#slideHome img{
+    width: 100%;
+}
+#slideHome .slides{
+    width: 12228px;
+    -webkit-animation: slide 14s ease infinite;
+}
+#slideHome .slide{
+    float: left;
+    width: 1200px;
+    height: 740px;
+}
+@-webkit-keyframes slide {
+    20% {margin-left: 0px;}
+    40% {margin-left: -1456px;}
+    60% {margin-left: -1456px;}
+    80% {margin-left: -1456px;}
+
+}
+/* #slideHome .slide.active{*/
+/*    opacity: 1;*/
+/*    visibility: visible;*/
+/*}*/
+/*#slideHome .btn-slide span{*/
+/*    color: rgba(7, 7, 7, 0.75);*/
+/*    font-size: 60px;*/
+/*    opacity: 0.6;*/
+/*}*/
+/* #slideHome span#btn-prev{*/
+/*    position: absolute;*/
+/*    top: 30%;*/
+/*    left: 0%;*/
+/*    z-index: 10;*/
+/*    cursor: pointer;*/
+/*}*/
+/* #slideHome span#btn-next{*/
+/*    position: absolute;*/
+/*    top: 30%;*/
+/*    right: 0%;*/
+/*    z-index: 10;*/
+/*    cursor: pointer;*/
+/*}*/
+/* #slideHome .btn-slide ul {*/
+/*    position: absolute;*/
+/*    z-index: 10;*/
+/*    width: 100px;*/
+/*    bottom: 25%;*/
+/*    left: 50%;*/
+/*    margin-left: -50px;*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*}*/
+/* #slideHome .btn-slide ul li {*/
+/*    width: 20px;*/
+/*    height: 20px;*/
+/*    background: rgba(7, 7, 7, 0.75);*/
+/*    opacity: 0.6;*/
+/*    list-style: none;*/
+/*    border-radius: 50%;*/
+/*    cursor: pointer;*/
+/*    transition: 0.6s;*/
+/*}*/
+
 
