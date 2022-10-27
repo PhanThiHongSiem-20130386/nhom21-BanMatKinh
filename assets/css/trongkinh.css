@@ -50,11 +50,9 @@ body, .container, .full-width .ubermenu-nav, .container-width, .row {
 }
 
 .flex-grow {
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
+   
     flex: 1;
-    -ms-flex-negative: 1;
-    -ms-flex-preferred-size: auto !important;
+    
 }
 
 .flex-col {

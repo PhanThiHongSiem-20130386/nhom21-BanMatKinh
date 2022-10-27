@@ -25,20 +25,23 @@ html {
     z-index: 1;
    
 }
-.container {
+.header-inner{
     display: flex;
     height: 70px;
+    justify-content: space-between;
+    
 }
 
 
-#header .center-nav {
+#header #nav {
     height: 70px;
-    flex: 2; 
-    display: flex;
+    flex: 3; 
+   
+    
 }
 
-#header  .logo,
-#header   .right-nav {
+ #logo,
+ #right-header {
     flex: 1;
 }
 
@@ -49,65 +52,94 @@ html {
     color: #fff;
 }
 
-#nav {
+.center-nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    
 }
 
-#nav li {
+#nav .center-nav > li {
     flex: 1;
     font-size: 16px;
     font-weight: 500;
-    cursor: pointer;
+    line-height: 70px;
     position: relative;
+    list-style-type: none;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer; height: 70px;
     
 }
-#nav .subnav li {
+#nav li a {
+    display: block;
+}
+
+#nav .subnav > li {
     text-decoration: none;
     list-style-type: none;
+    text-align: left;
 }
 
 
 #header li> a {
     color: #fff;
     text-decoration: none;
+  
 
 }
-#header  li:hover > a{
+#header .center-nav > li:hover > a{
     text-decoration: none;
-    color: #ccc;
+    color: #111;
+    background-color: #ccc;
+}
+
+#header .subnav >li:hover > a {
+    text-decoration: none;
+    color: #111;
+    background-color: #ccc;
 }
 
 #header  .right-nav {
     display: flex;
-    justify-content: space-between;
+  
 }
 
-#header  .right-nav .box {
-    flex: 2;
+
+#right-header .box {
+    flex: 3;
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
-#header  .right-nav .ti-user,
-#header  .right-nav  .ti-shopping-cart{
-    flex: 1;
-    text-align: right;
+#right-header .user {
+   margin-right: 20px;
+    margin-top: 20px;
+}
+#right-header .cart{
+    margin-right: -30px;
+    
+    margin-top: 20px;
    
 }
 
+#right-header .item-nav li > i {
+    font-size: 20px;
+}
 
 .logo {
     margin-left: 0px;
     line-height: 80px;
 }
 .box{
-    margin: 100px auto;
-   width: 30px;
-    height: 50px;
     flex: 2;
+    width: 30px;
+    height: 50px;
+    list-style-type: none;
   }
 
   .right-nav {
     display: flex;
+    list-style-type: none;
   }
   
   .container-1{
@@ -137,10 +169,9 @@ html {
     z-index: 1;
     color: #fff;
   }
-  ::before {
+  #nav .center-nav >li >a >i {
     font-size: 12px;
-    color: #ccc;
-}
+  }
   /* end header */
   
 
@@ -154,11 +185,7 @@ html {
     display: block;
 }
 
-#nav >li:hover > a,
-#nav .subnav li:hover a {
-    color: #111;
-    background-color: #ccc
-} 
+
 #nav .subnav li {
     display: block;
 }
@@ -180,4 +207,76 @@ html {
     display: block;
     
 }
+/* ---slide trang chủ*/
+#slideHome{
+    overflow: hidden;
+    width: 1200px;
+    height: 740px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+#slideHome img{
+    width: 100%;
+}
+#slideHome .slides{
+    width: 12228px;
+    -webkit-animation: slide 14s ease infinite;
+}
+#slideHome .slide{
+    float: left;
+    width: 1200px;
+    height: 740px;
+}
+@-webkit-keyframes slide {
+    20% {margin-left: 0px;}
+    40% {margin-left: -1456px;}
+    60% {margin-left: -1456px;}
+    80% {margin-left: -1456px;}
+
+}
+/* #slideHome .slide.active{*/
+/*    opacity: 1;*/
+/*    visibility: visible;*/
+/*}*/
+/*#slideHome .btn-slide span{*/
+/*    color: rgba(7, 7, 7, 0.75);*/
+/*    font-size: 60px;*/
+/*    opacity: 0.6;*/
+/*}*/
+/* #slideHome span#btn-prev{*/
+/*    position: absolute;*/
+/*    top: 30%;*/
+/*    left: 0%;*/
+/*    z-index: 10;*/
+/*    cursor: pointer;*/
+/*}*/
+/* #slideHome span#btn-next{*/
+/*    position: absolute;*/
+/*    top: 30%;*/
+/*    right: 0%;*/
+/*    z-index: 10;*/
+/*    cursor: pointer;*/
+/*}*/
+/* #slideHome .btn-slide ul {*/
+/*    position: absolute;*/
+/*    z-index: 10;*/
+/*    width: 100px;*/
+/*    bottom: 25%;*/
+/*    left: 50%;*/
+/*    margin-left: -50px;*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*}*/
+/* #slideHome .btn-slide ul li {*/
+/*    width: 20px;*/
+/*    height: 20px;*/
+/*    background: rgba(7, 7, 7, 0.75);*/
+/*    opacity: 0.6;*/
+/*    list-style: none;*/
+/*    border-radius: 50%;*/
+/*    cursor: pointer;*/
+/*    transition: 0.6s;*/
+/*}*/
+
 
