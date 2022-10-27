@@ -9,6 +9,8 @@
 
 html {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.15;
 }
 
 #main {
@@ -193,7 +195,7 @@ html {
     width: 100%;
 }
 #slideHome .slides{
-    width: 12228px;
+    width: 3600px;
     -webkit-animation: slide 14s ease infinite;
 }
 #slideHome .slide{
@@ -202,10 +204,11 @@ html {
     height: 740px;
 }
 @-webkit-keyframes slide {
-    20% {margin-left: 0px;}
-    40% {margin-left: -1456px;}
-    60% {margin-left: -1456px;}
-    80% {margin-left: -1456px;}
+    10% {margin-left: 0px;}
+    30% {margin-left: -1200px;}
+    50% {margin-left: -1200px;}
+    80% {margin-left: -1200px;}
+
 
 }
 /* #slideHome .slide.active{*/
@@ -252,4 +255,87 @@ html {
 /*    transition: 0.6s;*/
 /*}*/
 
+/* sản phẩm mới*/
+#wrapper{
+    max-width: 1170px;
+    margin: 0 auto;
 
+}
+.headline{
+    text-align: center;
+    margin: 40px 0px;
+}
+h3{
+    font-size: 18px;
+    color: #db774f ;
+    padding: 10px 20px ;
+    text-transform: uppercase;
+    border:  1px solid #db774f;
+    display: inline-block;
+    font-weight: 600;
+}
+ul.products {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+ul.products li{
+    flex-basis: 25%;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+ul.products li img{
+    max-width: 100%;
+    height: auto;
+}
+ul.products li .product-top{
+    position: relative;
+    overflow: hidden;
+}
+ul.products li .product-top .product-thumb{
+    display: block;
+}
+ul.products li:hover .product-top .product-thumb img{
+    filter: opacity(80%);
+}
+ul.products li .product-top .product-thumb img{
+    display: block;
+}
+ul.products li .product-top a.quick-view{
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    background-color: black;
+    color: white;
+    padding: 10px 0px;
+    position: absolute;
+    bottom: -41px;
+    width: 100%;
+    transition: 0.2s ease-in-out;
+    opacity: 0.65;
+}
+ul.products li:hover a.quick-view{
+    bottom: 0px;
+}
+ul.products li .product-info{
+    padding: 10px 0px;
+}
+ul.products li .product-info a{
+    display: block;
+    text-decoration: none;
+}
+ul.products li .product-info a.product-name{
+    color: orange;
+    padding: 3px 0px;
+    font-size: 16px;
+    font-weight: 600;
+}
+ul.products li .product-info .product-price{
+    color: black;
+    padding: 2px 0px;
+    font-weight: 600;
+}
