@@ -29,6 +29,7 @@ html {
     display: flex;
     height: 70px;
     justify-content: space-between;
+    
 }
 
 
@@ -54,6 +55,7 @@ html {
 .center-nav {
     display: flex;
     justify-content: center;
+    
 }
 
 #nav .center-nav > li {
