@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/trongkinh.css">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-    <title>DST-Mắt kính hàng dầu Việt Nam</title>
-  
+    <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
+    <title>Tròng cận</title>
 </head>
 
 <body>
@@ -23,6 +23,7 @@
                             <a href="">logo_</a>
                         </div>
                         <div class="list-nav" id="nav">
+
                             <ul class="center-nav">
                                 <li>
                                     <a href="./index.html">Trang chủ</a>
@@ -31,6 +32,7 @@
                                     <a href="">Kính Mát
                                         <i class="ti-angle-down"></i>
                                     </a>
+
                                 </li>
                                 <!-- Tròng kính -->
                                 <li><a href="./TrongKinh.html">Tròng kính
@@ -38,7 +40,7 @@
                                     </a>
 
                                     <ul class="subnav">
-                                        <li><a href="./TrongCan.html">Tròng cận</a></li>
+                                        <li><a href="/TrongCan.html">Tròng cận</a></li>
                                         <li><a href="">Tròng đổi màu</a></li>
                                         <li><a href="">Tròng siêu mỏng</a></li>
                                         <li><a href="">Trong chống ánh sáng xanh</a></li>
@@ -94,30 +96,51 @@
 
             </div>
         </header>
-        <!-- slide trang chủ -->
-        <div class="Begin-slide" id="slideHome">
-            <div class="slides">
-                <div class="slide "><img src="./assets/image/slideHome/1.png"></div>
-                <div class="slide "><img src="./assets/image/slideHome/2.png"></div>
-                <div class="slide "><img src="./assets/image/slideHome/img1.png"></div>
-                <div class="slide "><img src="./assets/image/slideHome/1.png"></div>
+        <!-- end footer -->
+        <!-- content -->
+
+        <div class="shop-page-title category-page-title page-title ">
+            <div class="page-title-inner flex-row  medium-flex-wrap container">
+                <div class="flex-col flex-grow medium-text-center">
+                    <div class="is-large">
+                        <nav class="woocommerce-breadcrumb breadcrumbs uppercase"><a href="index.html">Trang chủ</a>
+                            <span class="divider">&#47;</span> <a href="TrongKinh.html">Tròng kính</a> <span
+                                class="divider">&#47;</span>
+                            Tròng cận
+                        </nav>
+                    </div>
+
+                </div>
+                <!-- <div class="category-filtering category-filter-row show-for-medium">
+                        <a href="#" data-open="#shop-sidebar" data-visible-after="true" data-pos="left"
+                            class="filter-button uppercase plain">
+                            <i class="icon-equalizer"></i>
+                            <strong>Lọc</strong>
+                        </a>
+                        <div class="inline-block">
+                        </div>
+                    </div> -->
+                <div class="flex-col medium-text-center">
+                    <!-- <p class="woocommerce-result-count hide-for-medium">
+                                Hiển thị tất cả 11 kết quả</p> -->
+                    <form class="woocommerce-ordering" method="get">
+                        <select name="orderby" class="orderby" aria-label="Đơn hàng của cửa hàng">
+                            <option value="popularity" selected='selected'>Thứ tự theo mức độ phổ biến</option>
+                            <option value="rating">Thứ tự theo điểm đánh giá</option>
+                            <option value="date">Mới nhất</option>
+                            <option value="price">Thứ tự theo giá: thấp đến cao</option>
+                            <option value="price-desc">Thứ tự theo giá: cao xuống thấp</option>
+                        </select>
+                        <input type="hidden" name="paged" value="1" />
+                    </form>
+                </div>
             </div>
-            <!-- <div class="btn-slide">
-                <span id="btn-prev"><i class="fas fa-chevron-left"></i></span>
-                <span id="btn-next"><i class="fas fa-chevron-right"></i></span>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>-->
         </div>
     </div>
 
-    </div>
 
     </div>
+
 </body>
 
 </html>
