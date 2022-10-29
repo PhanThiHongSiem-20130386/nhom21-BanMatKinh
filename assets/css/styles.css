@@ -288,6 +288,7 @@ html {
     text-align: center;
     margin: 40px 0px;
 }
+
 h3{
     font-size: 18px;
     color: #db774f ;
@@ -297,6 +298,7 @@ h3{
     display: inline-block;
     font-weight: 600;
 }
+
 ul.products {
     list-style: none;
     display: flex;
@@ -357,10 +359,33 @@ ul.products li .product-info a.product-name{
     font-size: 16px;
     font-weight: 600;
 }
+#shop-sidebar h6 {
+    font-size: 16px;
+    color: orange;
+}
+
 ul.products li .product-info .product-price{
     color: black;
     padding: 2px 0px;
     font-weight: 600;
+}
+#shop-sidebar .children {
+    margin-left: 20px;
+}
+
+#shop-sidebar .product-category li  a {
+    color: orange;
+    padding: 6px 0px;
+}
+
+i.ti-angle-down {
+    color: orange;
+    font-size: 12px;
+    
+}
+
+#shop-sidebar .product-category li:hover  a{
+    text-decoration: none;
 }
 
 
