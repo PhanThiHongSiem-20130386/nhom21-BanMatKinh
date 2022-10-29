@@ -279,6 +279,24 @@ html {
 /*    transition: 0.6s;*/
 /*}*/
 
+#wrapper{
+    max-width: 1170px;
+    margin: 0 auto;
+
+}
+.headline{
+    text-align: center;
+    margin: 40px 0px;
+}
+h3{
+    font-size: 18px;
+    color: #db774f ;
+    padding: 10px 20px ;
+    text-transform: uppercase;
+    border:  1px solid #db774f;
+    display: inline-block;
+    font-weight: 600;
+}
 ul.products {
     list-style: none;
     display: flex;
