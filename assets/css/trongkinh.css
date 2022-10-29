@@ -238,3 +238,17 @@ option {
     min-height: 1.2em;
     padding: 0px 2px 1px;
 }
+
+
+.category-page-row {
+    display: flex;
+}
+.left-category {
+    flex: 4;
+
+}
+
+.right-category {
+    flex: 1;
+}
+
