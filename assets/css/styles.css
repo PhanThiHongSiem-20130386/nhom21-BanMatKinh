@@ -220,7 +220,7 @@ html {
     width: 100%;
 }
 #slideHome .slides{
-    width: 12228px;
+    width: 3600px;
     -webkit-animation: slide 14s ease infinite;
 }
 #slideHome .slide{
@@ -229,10 +229,11 @@ html {
     height: 740px;
 }
 @-webkit-keyframes slide {
-    20% {margin-left: 0px;}
-    40% {margin-left: -1456px;}
-    60% {margin-left: -1456px;}
-    80% {margin-left: -1456px;}
+    10% {margin-left: 0px;}
+    30% {margin-left: -1200px;}
+    50% {margin-left: -1200px;}
+    80% {margin-left: -1200px;}
+
 
 }
 /* #slideHome .slide.active{*/
@@ -338,7 +339,7 @@ ul.products li .product-top a.quick-view{
     color: white;
     padding: 10px 0px;
     position: absolute;
-    bottom: -41px;
+    bottom: -44px;
     width: 100%;
     transition: 0.2s ease-in-out;
     opacity: 0.65;
