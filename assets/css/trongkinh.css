@@ -61,8 +61,8 @@ body, .container, .full-width .ubermenu-nav, .container-width, .row {
     max-height: 100%;
 }
 
-.breadcrumbs {
-    color: #222;
+.breadcrumb {
+    color: #111;
     font-weight: bold;
     letter-spacing: 0;
     padding: 0;
@@ -74,9 +74,15 @@ body, .container, .full-width .ubermenu-nav, .container-width, .row {
 .breadcrumbs a:first-of-type {
     margin-left: 0;
 }
-.breadcrumbs a {
-    color: rgba(102,102,102,.7);
+.breadcrumb a {
+    color: #bbb;
     font-weight: normal;
+}
+
+
+
+ol.breadcrumb {
+    background-color: #fff;
 }
 
 a {

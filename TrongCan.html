@@ -103,10 +103,12 @@
             <div class="page-title-inner flex-row  medium-flex-wrap container">
                 <div class="flex-col flex-grow medium-text-center">
                     <div class="is-large">
-                        <nav class="woocommerce-breadcrumb breadcrumbs uppercase"><a href="index.html">Trang chủ</a>
-                            <span class="divider">&#47;</span> <a href="TrongKinh.html">Tròng kính</a> <span
-                                class="divider">&#47;</span>
-                            Tròng cận
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#">TRANG CHỦ</a></li>
+                                <li class="breadcrumb-item"><a href="#">TRÒNG KÍNH</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">TRÒNG CẬN</li>
+                            </ol>
                         </nav>
                     </div>
 
@@ -136,10 +138,285 @@
                 </div>
             </div>
         </div>
+        <div id="content">
+            <!-- chia trang thành 2 phần 1 phần là list product, 1 phần là danh mục sp -->
+            <div class="category-page-row container">
+                <!-- content trái -->
+                <div class="left-category">
+                    <div class="shop-container">
+                        <!--  chia 4 -->
+                        <div class="list-product">
+                            <ul class="products">
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="" class="product-thumb">
+                                                <img src="./assets/image/trongkinh/trongcan/can1.webp" alt="">
+                                            </a>
+                                            <a href="" class="quick-view">Xem nhanh</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="" class="product-name">Kính đơn trong chemi-Hàn Quốc U2 crystal</a>
+                                            <div class="product-price">1,360,000đ</div>
+                                            <!--btn lựa chọn nhanh-->
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="" class="product-thumb">
+                                                <img src="./assets/image/trongkinh/trongcan/can2.webp" alt="">
+                                            </a>
+                                            <a href="" class="quick-view">Xem nhanh</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="" class="product-name">Tròng mắt cận VIS-SINGAPORE 1.56</a>
+                                            <div class="product-price">390,000đ</div>
+                                            <!--btn lựa chọn nhanh-->
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="" class="product-thumb">
+                                                <img src="./assets/image/trongkinh/trongcan/can3.webp" alt="">
+                                            </a>
+                                            <a href="" class="quick-view">Xem nhanh</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="" class="product-name">Tròng kính MIHAN Hàn Quốc 1.56</a>
+                                            <div class="product-price">250,000đ</div>
+                                            <!--btn lựa chọn nhanh-->
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="" class="product-thumb">
+                                                <img src="./assets/image/trongkinh/trongcan/can4.png" alt="">
+                                            </a>
+                                            <a href="" class="quick-view">Xem nhanh</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="" class="product-name">Kính đơn trong chemi-Hàn Quốc U2 crystal</a>
+                                            <div class="product-price">872,000đ</div>
+                                            <!--btn lựa chọn nhanh-->
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="" class="product-thumb">
+                                                <img src="./assets/image/trongkinh/trongcan/can5.png" alt="">
+                                            </a>
+                                            <a href="" class="quick-view">Xem nhanh</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="" class="product-name">Tròng kính HOYA Nulux 1.74 HVLL cao cấp</a>
+                                            <div class="product-price">5,590,000 đ</div>
+                                            <!--btn lựa chọn nhanh-->
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="" class="product-thumb">
+                                                <img src="./assets/image/trongkinh/trongcan/can6.jpg" alt="">
+                                            </a>
+                                            <a href="" class="quick-view">Xem nhanh</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="" class="product-name">Tròng kính HOYA STELLIFY 1.67AS</a>
+                                            <div class="product-price">1,420,000 </div>
+                                            <!--btn lựa chọn nhanh-->
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--  content phải -->
+                <div class="right-category">
+                    <div id="shop-sidebar" class="sidebar-inner">
+                        <div class="inner-category">
+                            <h6 class="widget-title">Danh mục sản phẩm</h6>
+                            <div class="is-divider"></div>
+                            <ul class="product-category">
+                                <li class="cat-item cat-parent cat-item-1 has-child">
+                                    <a href="./GongKinh.html">Gọng kính</a>
+                                    <button class="toggle collapsed" data-toggle="collapse" data-target="#collapse1"
+                                        aria-expanded="false" aria-controls="collapse1">
+                                        <i class="ti-angle-down"></i>
+                                    </button>
+                                    <ul class="children collapse" id="collapse1">
+                                        <li class="cat-item item-1-children1 item-public">
+                                            <a href="">Gọng không viền</a>
+                                        </li>
+                                        <li class="cat-item item-1-children2 item-public">
+                                            <a href="">Gọng kính kim loại</a>
+                                        </li>
+                                        <li class="cat-item item-1-children3 item-public">
+                                            <a href="">Gọng kính nhựa</a>
+                                        </li>
+                                        <li class="cat-item item-1-children4 item-public">
+                                            <a href="">Gọng nhựa phối kim loại</a>
+                                        </li>
+                                        <li class="cat-item item-1-children5 item-public">
+                                            <a href="">Gọng titan</a>
+                                        </li>
+                                        <li class="cat-item item-1-children6 item-public">
+                                            <a href="">Gọng tròn</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="cat-item cat-parent cat-item-2  has-child">
+                                    <a href="">Kính mát</a>
+                                    <button class="toggle collapsed" data-toggle="collapse" data-target="#collapse2"
+                                        aria-expanded="false" aria-controls="collapse2">
+                                        <i class="ti-angle-down"></i>
+                                    </button>
+                                    <ul class="children collapse" id="collapse2">
+                                        <li class="cat-item item-2-children1 item-public">
+                                            <a href="">Kính mát em bé</a>
+                                        </li>
+                                        <li class="cat-item item-2-children2 item-public">
+                                            <a href="">Kính mát nam</a>
+                                        </li>
+                                        <li class="cat-item item-2-children3 item-public">
+                                            <a href="">Kính mát nữ</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="cat-item cat-parent cat-item-3  has-child">
+                                    <a href="">Tròng kính</a>
+                                    <button class="toggle collapsed" data-toggle="collapse" data-target="#collapse3"
+                                        aria-expanded="false" aria-controls="collapse3">
+                                        <i class="ti-angle-down"></i>
+                                    </button>
+                                    <ul class="children collapse" id="collapse3">
+                                        <li class="cat-item item-3-children1 item-public">
+                                            <a href="">Trong cận</a>
+                                        </li>
+                                        <li class="cat-item item-3-children2 item-public">
+                                            <a href="">Trong chống ánh xanh</a>
+                                        </li>
+                                        <li class="cat-item item-3-children3 item-public">
+                                            <a href="">Tròng chốt chói ngày & đêm</a>
+                                        </li>
+                                        <li class="cat-item item-3-children3 item-public">
+                                            <a href="">Tròng chốt tia UV</a>
+                                        </li>
+                                        <li class="cat-item item-3-children3 item-public">
+                                            <a href="">Tròng đổi màu</a>
+                                        </li>
+                                        <li class="cat-item item-3-children3 item-public">
+                                            <a href="">Tròng siêu mỏng</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="footer-widgets footer footer-2 dark">
+            <div class="row dark large-columns-1 mb-0">
+                <div id="block_widget-4" class="col pb-0 widget block_widget">
+                    <div class="row row-small" id="row-1713151878">
+                        <div id="col-623557254" class="col medium-3 small-12 large-3">
+                            <div class="col-inner1">
+
+                                <h4>GIỚI THIỆU</h4>
+                                <span>
+                                    Cửa hàng chuyên cung cấp các loại mắt kính – gọng kính với mức giá phù hợp
+                                    với tâm lý khách hàng và có tính cạnh tranh cao. HMK Eyewear luôn luôn mong
+                                    muốn làm hài lòng tất cả khách hàng.
+                                </span>
+
+                            </div>
+                        </div>
+
+                        <div id="col-2075806818" class="col medium-3 small-12 large-3">
+                            <div class="col-inner2">
+                                <h4>LIÊN KẾT</h4>
+                                <div class="ux-menu stack stack-col justify-start ux-menu--divider-solid">
+                                    <div class="ux-menu-link flex menu-item">
+                                        <a class="ux-menu-link__link flex">
+                                            <span class="ux-menu-link__text">
+                                                Giấy Chứng Nhận
+                                            </span>
+                                        </a>
+                                    </div>
+
+                                    <div class="ux-menu-link flex menu-item">
+                                        <a class="ux-menu-link__link flex">
+                                            <span class="ux-menu-link__text">
+                                                Thanh toán – Mua hàng
+                                            </span>
+                                        </a>
+                                    </div>
+
+                                    <div class="ux-menu-link flex menu-item">
+                                        <a class="ux-menu-link__link flex">
+                                            <span class="ux-menu-link__text">
+                                                Ưu đãi/ Khuyến mãi
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="col-993078865" class="col hide-for-medium medium-3 small-12 large-3">
+                            <div class="col-inner">
+                                <h4>MẠNG XÃ HỘI</h4>
+                                <div class="social-icons follow-icons" style="font-size:115%">
+                                    <a href="#" class="slow_fade social_button">
+                                        <img src="assets/image/social_icons/yt.png" alt="">
+                                    </a>
+
+                                    <a href="#" class="slow_fade social_button">
+                                        <img src="assets/image/social_icons/twitter.png" alt="">
+                                    </a>
+
+                                    <a href="#" class="slow_fade social_button">
+                                        <img src="assets/image/social_icons/facebook.png" alt="">
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="text-center">
+                <div class="container clearfix">
+
+                    <div class="footer-primary pull-left">
+                        <div class="copyright-footer">
+                            Copyright 2022 © <strong style="color: white">HMK Eyewear</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-
-    </div>
 
 </body>
 
