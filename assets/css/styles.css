@@ -89,8 +89,8 @@ html {
 }
 #header .center-nav > li:hover > a{
     text-decoration: none;
-    color: #111;
-    background-color: #ccc;
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 #header .subnav >li:hover > a {
@@ -298,6 +298,18 @@ h3{
     border:  1px solid #db774f;
     display: inline-block;
     font-weight: 600;
+}
+
+.section-title-center {
+    display: flex;
+
+}
+.section-title-center h3 {
+    flex: 1;
+}
+
+.section-title-center b {
+    flex: 2;
 }
 
 ul.products {
