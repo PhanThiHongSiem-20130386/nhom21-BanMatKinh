@@ -38,7 +38,7 @@ page-title {
 }
 
 .flex-row {
-   
+
     flex-direction: row!important;
     margin-top: 70px;
 }
@@ -149,7 +149,6 @@ a.plain {
     transition: color .3s,opacity .3s,transform .3s,-webkit-transform .3s;
 }
 
-
 .filter-button {
     display: inline-block;
     margin-top: 0.5em;
@@ -202,7 +201,7 @@ select, .select-resize-ghost, .select2-container .select2-choice, .select2-conta
     -moz-appearance: none;
     background-image: url('http://www.w3.org/2000/svg' );
     /* background-position: right 0.45em top 50%; */
-    background-position-x: right 0.45em;
+    background-position-x: right 0.50m;
     background-position-y: top 50%;
     background-repeat: no-repeat;
     background-repeat-x: no-repeat;
@@ -266,7 +265,30 @@ div#content {
     flex: 1;
 }
 
-/* conten right */
+/*
+content left
+ */
+#content .left-category .shop-container .term-description{
+    width: 100%;
+    text-align: justify;
+}
+#content .left-category .shop-container .term-description h2, #content .left-category .shop-container .term-description h3 {
+    color: #f58153;
+    text-transform: uppercase;
+
+}
+#content .left-category .shop-container .term-description h3 {
+
+}
+#content .left-category .shop-container .term-description p img {
+width: 100%;
+}
+#content .left-category .shop-container .term-description p span,#content .left-category .shop-container .term-description p em {
+    font-weight: 400;
+    color: #dc9003;
+}
+
+/* content right */
 
 
 .inner-category > ul >li .has-child {
@@ -288,7 +310,7 @@ button.toggle {
     float: right;
     background-color: #fff;
     color: orange;
-    
+
     font-size: 14px;
 }
 
