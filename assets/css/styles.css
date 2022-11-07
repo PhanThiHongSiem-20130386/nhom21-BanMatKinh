@@ -316,7 +316,6 @@ ul.products {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
 }
 ul.products li{
     flex-basis: 25%;
