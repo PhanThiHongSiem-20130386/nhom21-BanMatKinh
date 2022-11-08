@@ -269,7 +269,7 @@ div#content {
 content left
  */
 #content .left-category .shop-container ul.product-thumb {
-   width: 100px;
+    width: 100px;
     height: auto;
 }
 #content .left-category .shop-container .term-description{
@@ -285,9 +285,9 @@ content left
 
 }
 #content .left-category .shop-container .term-description p img {
-width: 100%;
+    width: 100%;
 }
-#content .left-category .shop-container .term-description p span,#content .left-category .shop-container .term-description p em {
+#content .left-category .shop-container .term-description p ,#content .left-category .shop-container .term-description p em {
     font-weight: 400;
     color: #dc9003;
 }
