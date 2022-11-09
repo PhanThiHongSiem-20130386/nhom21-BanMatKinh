@@ -149,6 +149,7 @@ a.plain {
     transition: color .3s,opacity .3s,transform .3s,-webkit-transform .3s;
 }
 
+
 .filter-button {
     display: inline-block;
     margin-top: 0.5em;
