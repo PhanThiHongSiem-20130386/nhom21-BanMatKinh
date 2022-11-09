@@ -406,18 +406,17 @@ ul.products li .product-info .product-price{
 }
 .de-muc .de-muc-1,
 .de-muc .de-muc-2{
-    margin-left: 150px;
+    margin-left: 40px;
     font-size: 19px;
     font-weight: 500;
 }
 .de-muc .text{
     font-size: 16px;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 47px;
 }
 .text1{
     font-size: 20px;
-    margin-left: 170px;
+    margin-left: 42px;
     font-weight: 600
 }
 .text-li{
@@ -432,28 +431,38 @@ ul.products li .product-info .product-price{
 begin footer
 */
 
+
 .footer {
+    min-height: 120px;
     background-color: #F15412;
 }
 .footer .menu-item a{
     text-decoration: none;
     color: #eeeeee;
 }
-.footer .copyright-footer{
-    margin-top: 50px;
-}
-.footer .col-inner1{
-    margin-left: 120px;
-    width: 400px;
-}
-.footer .col-inner2{
-    margin-left: 30px;
-}
+
 span{
     color: #eeeeee;
 }
 
+img{
+    margin-right: 20px;
+}
+.footer .text-center{
+    font-size: 18px;
+}
 h4{
     font-size: 25px;
+}
+.item-footer {
+    flex: 1;
+}
+.ro {
+    /* margin-left: 0px;
+    margin-right: 0px; */
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 40px;
+
 }
 
