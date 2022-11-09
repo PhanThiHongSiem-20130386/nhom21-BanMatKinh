@@ -474,4 +474,7 @@ h4{
     padding-bottom: 40px;
 
 }
+span.ux-menu-link__text {
+    font-size: 15px;
+}
 
