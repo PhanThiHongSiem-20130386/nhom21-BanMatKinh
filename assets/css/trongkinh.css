@@ -301,4 +301,8 @@ button.toggle {
 .right-category .inner-category .product-category > li {
     padding: 4px 0px;
 }
+.page-item.active .page-link {
+    background-color: #34b3f1;
+    color: #34b3f1;
+}
 
