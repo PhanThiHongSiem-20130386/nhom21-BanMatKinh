@@ -394,36 +394,62 @@ ul.products li .product-info .product-price{
 #shop-sidebar .product-category li:hover  a{
     text-decoration: none;
 }
+.title-h5{
+    color:rgba(76, 110, 43, 0.913);
+    font-size: 25px;
+    margin-top: 90px;
+    FONT-WEIGHT: 600;
+    text-align: center;
+    margin-bottom: 10PX;
+}
+.line {
+    width: 20px;
+    height: 2px;
+}
+.answer{
+    text-align: center;
+    font-size: 20px;
+}
+.categ .categ-1,
+.categ .categ-2{
+    margin-left: 40px;
+    font-size: 19px;
+    font-weight: 500;
+}
+.categ .text{
+    font-size: 16px;
+    margin-left: 47px;
+}
+.text1{
+    font-size: 20px;
+    margin-left: 42px;
+    font-weight: 600;
+    margin-top: 14px;
+}
+
+.text-li{
+    font-size: 16px;
+    margin-left: 50px;
+}
+.measure{
+    margin-left: 350px;
+}
 
 
 /*
 begin footer
 */
-.footer{
-    width: 100%;
-    max-height: 500px;
-    background-color: #F15412;
-}
 
 
 .footer {
-    max-height: 600px;
+    min-height: 120px;
     background-color: #F15412;
 }
 .footer .menu-item a{
     text-decoration: none;
     color: #eeeeee;
 }
-.footer .copyright-footer{
-    margin-top: 50px;
-}
-.footer .col-inner1{
-    margin-left: 120px;
-    width: 400px;
-}
-.footer .col-inner2{
-    margin-left: 30px;
-}
+
 span{
     color: #eeeeee;
 }
@@ -432,10 +458,23 @@ img{
     margin-right: 20px;
 }
 .footer .text-center{
-    margin-left: 500px;
     font-size: 18px;
 }
 h4{
     font-size: 25px;
+}
+.item-footer {
+    flex: 1;
+}
+.ro {
+    /* margin-left: 0px;
+    margin-right: 0px; */
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 40px;
+
+}
+span.ux-menu-link__text {
+    font-size: 15px;
 }
 
