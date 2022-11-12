@@ -14,6 +14,7 @@ html {
 #main {
 
 }
+
 /* begin header */
 #header {
     height: 70px;
@@ -67,7 +68,8 @@ html {
     list-style-type: none;
     text-align: center;
     display: inline-block;
-    cursor: pointer; height: 70px;
+    cursor: pointer;
+    height: 70px;
     
 }
 #nav li a {
@@ -98,10 +100,70 @@ html {
     color: #111;
     background-color: #ccc;
 }
+/*
+chi tiet gio hang
+*/
+.cart-page{
+    margin: 80px auto;
+    width: 400px;
+    position: absolute;
+    /*top: -300px;*/
+    right: 50px;
+    background: #ccc;
+    visibility: hidden;
+    opacity: 0;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color:  #eeeeee;
+    background: orange;
+    font-weight: normal;
+}
+td{
+    padding: 10px 5px;
+}
+
+td input{
+    width: 50px;
+    height: 30px;
+    padding: 5px;
+}
+td a{
+    color: orange;
+    font-size:  12px;
+}
+td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+}
+.total-price table{
+    border-top: 2px solid #ff523b;
+    width: 100%;
+    max-width: 350px;
+}
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+}
 
 #header  .right-nav {
     display: flex;
-  
 }
 
 
@@ -117,11 +179,14 @@ html {
 }
 #right-header .cart{
     margin-right: -30px;
-    
     margin-top: 20px;
-   
 }
-
+#right-header .cart:hover > .cart-page{
+    top:-10px;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.1s ease-in-out;
+}
 #right-header .item-nav li > i {
     font-size: 20px;
 }
@@ -173,12 +238,11 @@ html {
     font-size: 12px;
   }
   /* end header */
-  
 
 
 
 
-  /* begin  tròng kính*/
+/* begin  tròng kính*/
  
 
   #nav li:hover .subnav {
@@ -279,7 +343,11 @@ html {
 /*    cursor: pointer;*/
 /*    transition: 0.6s;*/
 /*}*/
+/*
 
+/*
+danh sách sản phẩm
+ */
 #wrapper{
     max-width: 1170px;
     margin: 0 auto;
@@ -371,6 +439,111 @@ ul.products li .product-info a.product-name{
     font-size: 16px;
     font-weight: 600;
 }
+/*
+xem nhanh button
+*/
+#modal{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.75);
+    transition: all 250ms ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+#modal .modal--bg{
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+}
+#modal .modal_content{
+    position: absolute;
+    justify-content: center;
+    align-content: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    max-height: 540px;
+    max-width: 960px;
+    top: 40%;
+    background-color: antiquewhite;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-100px);
+    transition: all 250ms ease-in-out;
+}
+#modal .modal_content .modal_content--show{
+    transform: translateY(0);
+    visibility: visible;
+    opacity: 1;
+    z-index: 2;
+}
+#modal .modal_image{
+    width: 100%;
+}
+#modal .close_button{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+
+    font-size: 14px;
+    color: black;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+    z-index: 3;
+}
+#modal .close_button:hover{
+    color: red;
+    text-decoration: none;
+}
+#modal .modal_left,#modal .modal_right{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+}
+.detail .detail_title, .detail_description{
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+.detail .detail_price{
+    font-weight: bold;
+}
+.detail .detail_btnbag{
+    cursor: pointer;
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 250ms ease-in-out;
+}
+.detail .detail_btnbag:hover{
+    color: orangered;
+    box-shadow: black;
+}
+@media(max-width: 600px){
+    #modal .modal_content{
+            display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    #modal .modal_content--show{
+        max-height: 100%;
+        min-width: 400px;
+    }
+    #modal .modal_left{
+        margin-top: 40px;
+    }
+}
+
+
 #shop-sidebar h6 {
     font-size: 16px;
     color: orange;
@@ -434,96 +607,10 @@ ul.products li .product-info .product-price{
 .measure{
     margin-left: 350px;
 }
-/*
-xem nhanh button
- */
-.modal{
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background:  rgb(0,0,0,0.75);
-    transition: transition250;
-    opacity: 0;
-    visibility: hidden;
-}
-.modal .modal--bg{
-    opacity: 1;
-    visibility: visible;
-    z-index: 1;
-}
- .modal_content {
-    position: absolute;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(2,1fr);
-    top: 50%;
-    max-height: 540px;
-    max-width: 960px;
-    background-color: lightyellow;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-100px);
-    transition: transition250;
-}
- .modal_content .modal_content--show{
-    transform: translateY(0);
-    visibility: visible;
-    opacity: 1;
-    z-index: 2;
-}
- .modal_content .close_button{
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 24px;
-    color: black;
-    cursor: pointer;
-    z-index: 3;
-}
- .modal_content .close_button a{
-    text-decoration: none;
-}
- .modal_content .close_button:hover i{
-    color: orangered;
-}
- .modal_content .modal_image{
-    width: 100%;
-}
- .modal_content .modal_left,#modal .modal_content .modal_right{
-    justify-content: center;
-    padding: 20px;
-}
- .modal_content .modal_left{
-    margin-top: 40px;
-}
- .modal_content .modal_right .detail .detail_title{
-    text-transform: uppercase;
-}
- .modal_content .modal_right .detail_price{
-    font-weight: bold;
-}
- .modal_content .modal_right .detail_btnbag{
-    cursor: pointer;
-    background: black;
-    color: white;
-    text-align: center;
-    padding: 10px 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: transition250;
 
-}
- .modal_content .modal_right .detail_btnbag:hover{
-    color: orangered;
-    background: rgba(0, 0, 0, 0.90);
-}
 /*
 begin footer
 */
-
 
 .footer {
     min-height: 120px;
