@@ -124,7 +124,9 @@ html {
     /* margin-top: 20px; */
 
 }
-
+li.item-nav.user {
+    line-height: 90px;
+}
 #right-header .cart {
     margin-right: -30px;
 
@@ -365,6 +367,9 @@ i.ti-shopping-cart {
 
 /* mobile */
 @media only screen and (max-width: 740px) {
+    .container.mobile {
+        display: block;
+    }
     .section-title .section-title-main {
         font-size: 20px;
        
