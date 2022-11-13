@@ -15,19 +15,21 @@ html {
 
 /* begin header */
 #header {
-    height: 70px;
+    height: 90px;
     background-color: #F15412;
     top: 0;
     position: fixed;
     left: 0;
     right: 0;
-    z-index: 1;
+
+    z-index: 2;
+   
 
 }
 
 .header-inner {
     display: flex;
-    height: 70px;
+    height: 90px;
     justify-content: space-between;
 
 }
@@ -62,13 +64,15 @@ html {
     flex: 1;
     font-size: 16px;
     font-weight: 500;
-    line-height: 70px;
+    line-height: 90px;
     position: relative;
     list-style-type: none;
     text-align: center;
     display: inline-block;
     cursor: pointer;
-    height: 70px;
+
+    height: 90px;
+    
 
 }
 
@@ -110,18 +114,19 @@ html {
 
 #right-header .box {
     flex: 3;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-left: 20px;
 }
 
 #right-header .user {
+
     margin-right: 20px;
     margin-top: 20px;
+
 }
 
 #right-header .cart {
     margin-right: -30px;
-
 
 }
 
@@ -746,7 +751,7 @@ ul.products li .product-info .product-price {
 .title-h5 {
     color: rgba(76, 110, 43, 0.913);
     font-size: 25px;
-    margin-top: 90px;
+    margin-top: 120px;
     FONT-WEIGHT: 600;
     text-align: center;
     margin-bottom: 10PX;
@@ -788,7 +793,7 @@ ul.products li .product-info .product-price {
 
 .measure {
     margin-left: 350px;
-}
+
 
 .all-product span {
     display: inline-block;
@@ -876,7 +881,6 @@ img {
 begin footer
 */
 
-
 .footer {
     min-height: 120px;
     background-color: #F15412;
@@ -908,8 +912,7 @@ h4 {
 }
 
 .ro {
-    /* margin-left: 0px;
-    margin-right: 0px; */
+
     display: flex;
     padding-top: 50px;
     padding-bottom: 40px;
@@ -918,4 +921,10 @@ h4 {
 
 span.ux-menu-link__text {
     font-size: 15px;
+
+.footer #footer3 .slow_fade {
+    color: #4d8c5a;
+    text-decoration: none;
+    font-weight: 550;
+
 }
