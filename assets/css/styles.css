@@ -121,7 +121,7 @@ html {
 #right-header .user {
 
     margin-right: 20px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 
 }
 
@@ -129,7 +129,9 @@ html {
     margin-right: -30px;
 
 }
-
+a.cart-header {
+    line-height: 90px;
+}
 #right-header .item-nav li>i {
     font-size: 20px;
 }
@@ -794,7 +796,7 @@ ul.products li .product-info .product-price {
 .measure {
     margin-left: 350px;
 
-
+}
 .all-product span {
     display: inline-block;
     background-color: #F15412;
@@ -921,7 +923,7 @@ h4 {
 
 span.ux-menu-link__text {
     font-size: 15px;
-
+}
 .footer #footer3 .slow_fade {
     color: #4d8c5a;
     text-decoration: none;
