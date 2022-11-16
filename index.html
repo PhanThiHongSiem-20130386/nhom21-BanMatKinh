@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-
     <title>DST-Mắt kính hàng đầu Việt Nam</title>
+
+
 
 </head>
 
@@ -100,6 +101,52 @@
                                     <a href="" class="cart-header" title="giỏ hàng">
                                         <i class="ti-shopping-cart"></i>
                                     </a>
+                                    <!--chi tiet gio hang-->
+                                    <div class="small-container cart-page">
+                                        <table>
+                                            <tr>
+                                                <th>Sản phẩm</th>
+                                                <th></th>
+                                                <th>Số lượng</th>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <tr>
+                                                        <div class="cart-info">
+                                                            <td>
+                                                            <img src="">
+                                                                </td>
+                                                            <td>
+                                                            <div>
+                                                                <p>product name</p>
+                                                                <small>Price: 390000</small>
+                                                                <br>
+                                                                <a href="">Remove</a>
+                                                            </div>
+                                                            </td>
+                                                                <td><input type="number" value="1"></td>
+                                                        </div>
+                                                    </tr>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <div class="total-price">
+                                            <table>
+                                                <tr>
+                                                    <td>Giá:</td>
+                                                    <td>39000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Tiền vận chuyển:</td>
+                                                    <td>39000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Thành tiền:</td>
+                                                    <td>39000</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -284,7 +331,7 @@
                 </div>-->
             </div>
         </div>
-
+        <!--sản phẩm-->
         <div id="wrapper">
             <div class="container pc-tablet">
 
@@ -757,10 +804,51 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
 
+
+
+        </div>
+        <!--button xem nhanh-->
+<!--        <div id="quickViewbtb">-->
+<!--        <div class="modal"></div>-->
+<!--        <div class="modal__content">-->
+<!--            <i class="modal__close ti-close"></i>-->
+<!--            <div class="modal__left">-->
+<!--                <img class="modal__ìmg" src="" alt="">-->
+<!--            </div>-->
+
+<!--            <div class="modal__right">-->
+<!--                <div class="detail">-->
+<!--                    <h2 class="detail__title">product title</h2>-->
+<!--                    <p class="detail__description">mô tả sản phâm</p>-->
+<!--                    <p class="detail__price"></p>-->
+<!--                    <p class="detail__addbag">Thêm vào giỏ hàng/p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        </div>-->
+        <div id="modal" class="modal--bg">
+        <div class="modal_content modal_content--show">
+               <a href="" class="item close_button">
+                <i class="ti-close"></i>
+                </a>
+                <div class="modal_left">
+                    <img class="modal_image" src="" alt="">
+                </div>
+                <div class="modal_right">
+                    <div class="detail">
+                        <h2 class="detail_title"></h2>
+                        <p class="detail_description">mô tả sản phẩm</p>
+                        <p class="detail_price"></p>
+                        <button class="detail_btnbag">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+        </div>
+        </div>
         <!-- footer -->
         <div class="footer">
             <div class="footer-wrap">
@@ -844,6 +932,7 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
+    <script src="assets/js/QuickViewButton.js"></script>
 
 </body>
 

@@ -268,6 +268,10 @@ div#content {
 /*
 content left
  */
+#content .left-category .shop-container ul.product-thumb {
+   width: 100px;
+    height: auto;
+}
 #content .left-category .shop-container .term-description{
     width: 100%;
     text-align: justify;

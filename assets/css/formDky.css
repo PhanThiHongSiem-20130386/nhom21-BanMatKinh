@@ -75,3 +75,50 @@ a:hover{
     text-decoration: none;
     color: black;
 }
+.text-center {
+    text-align: center !important;
+}
+.rounded {
+    border-radius: 0.25rem !important;
+}
+
+.text{
+    margin-left: 50px;
+    margin-right: 50px;
+    font-weight: 500;
+}
+.nhapma{
+    float: left;
+    width: 160px;
+    height: 50px;
+    background-color: #cccccc;
+    border-radius: 5px;
+    border: 1px solid white;
+    margin-top: 50px;
+}
+.margin-right {
+    float: right;
+    font-weight: 500;
+    width: 200px;
+    margin-right: 20px;
+    margin-top: 50px;
+}
+
+
+.text-center .rounded{
+    background-color: #F15412;
+    color: #e2e6ea;
+    width: 150px;
+    height: 45px;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.rounded1{
+    background-color: #F15412;
+    color: #e2e6ea;
+    width: 200px;
+    height: 50px;
+    margin-left: 20px;
+    border-radius: 5px;
+
+}
