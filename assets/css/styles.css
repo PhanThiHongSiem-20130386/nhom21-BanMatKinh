@@ -429,109 +429,73 @@ ul.products li .product-info a.product-name {
 /*
 xem nhanh button
 */
-#modal{
-    display: flex;
-    justify-content: center;
-    align-content: center;
+.modal{
     position: fixed;
     top: 0;
     height: 100%;
     width: 100%;
     background: rgba(0,0,0,0.75);
-    transition: all 250ms ease-in-out;
-    opacity: 0;
-    visibility: hidden;
-}
-#modal .modal--bg{
-    visibility: visible;
-    opacity: 1;
-    z-index: 1;
-}
-#modal .modal_content{
-    position: absolute;
+    display: none;
+    align-items: center;
     justify-content: center;
-    align-content: center;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    max-height: 540px;
-    max-width: 960px;
-    top: 40%;
-    background-color: antiquewhite;
-    visibility: hidden;
-    opacity: 0;
-    transform: translateY(-100px);
-    transition: all 250ms ease-in-out;
+   margin-top: 90px;
 }
-#modal .modal_content .modal_content--show{
-    transform: translateY(0);
-    visibility: visible;
-    opacity: 1;
-    z-index: 2;
+.modal-contrainer {
+    background-color: #fff;
+    width: 900px;
+    min-height: 400px;
+    position: relative;
+    max-width: calc(100% - 32px);
 }
-#modal .modal_image{
-    width: 100%;
-}
-#modal .close_button{
-    position: absolute;
-    top: 10px;
-    right: 20px;
-
-    font-size: 14px;
-    color: black;
-    cursor: pointer;
-    transition: all 250ms ease-in-out;
-    z-index: 3;
-}
-#modal .close_button:hover{
-    color: red;
-    text-decoration: none;
-}
-#modal .modal_left,#modal .modal_right{
+.modal-content1 {
     display: flex;
-    justify-content: center;
-    align-content: center;
-    padding: 20px;
 }
-.detail .detail_title, .detail_description{
-    text-transform: uppercase;
-    padding-top: 10px;
+.content-item {
+    padding: 20px 20px;
 }
-.detail .detail_price{
-    font-weight: bold;
-}
-.detail .detail_btnbag{
-    cursor: pointer;
-    background: black;
-    color: white;
+.header-modal {
     text-align: center;
-    padding: 10px 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: all 250ms ease-in-out;
+    margin-top: 30px;
 }
-.detail .detail_btnbag:hover{
-    color: orangered;
-    box-shadow: black;
+input.minus.is-form,
+input.plus.is-form {
+    width: 16px;
 }
-@media(max-width: 600px){
-    #modal .modal_content{
-            display: flex;
-        justify-content: center;
-        align-content: center;
-        flex-direction: column;
-        text-align: center;
-    }
-    #modal .modal_content--show{
-        max-height: 100%;
-        min-width: 400px;
-    }
-    #modal .modal_left{
-        margin-top: 40px;
-    }
+input.input-qty {
+    width: 42px;
+}
+.footer-modal >p {
+    font-size: 12px;
+    margin-bottom: 0px;
+
+}
+.footer-modal {
+    padding: 20px 0px;
+}
+
+button.addC {
+    color: #fff;
+    background: #F15412;
+    border: 1px solid #F15412;
+    padding: 4px 10px;
+    margin-left: 77px;
+}
+.close-modal {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px;
+    cursor: pointer;
+}
+.close-modal:hover {
+    background-color: #F15412;
+}
+.modal.open{
+    display: flex;
 }
 
 
-
+/* end xem nhanh */
 #shop-sidebar h6 {
     font-size: 16px;
     color: orange;
@@ -1016,6 +980,9 @@ i.ti-shopping-cart {
 
     .slide .carousel-item img {
        
+    }
+    .quick-view {
+        display: none;
     }
     /* xem nhanh */
    
