@@ -314,7 +314,7 @@ div#footer2 {
     margin-top: 70px;
 }
 .slide .carousel-inner > img {
-    height: 600px;
+    height: 900px;
 }
 /* end slide */
 
@@ -439,8 +439,8 @@ xem nhanh button
     width: 100%;
     background: rgba(0,0,0,0.75);
     transition: all 250ms ease-in-out;
-    opacity: 0;
-    visibility: hidden;
+    /*opacity: 0;*/
+    /*visibility: hidden;*/
 }
 #modal .modal--bg{
     visibility: visible;
@@ -457,8 +457,8 @@ xem nhanh button
     max-width: 960px;
     top: 40%;
     background-color: antiquewhite;
-    visibility: hidden;
-    opacity: 0;
+    /*visibility: hidden;*/
+    /*opacity: 0;*/
     transform: translateY(-100px);
     transition: all 250ms ease-in-out;
 }

@@ -270,7 +270,10 @@ content left
  */
 #content .left-category .shop-container ul.product-thumb {
     width: 100px;
-    height: auto;
+}
+#content .left-category .shop-container .list-product .product-top a.product-thumb img{
+    width: 500px;
+    height: 150px;
 }
 #content .left-category .shop-container .term-description{
     width: 100%;
