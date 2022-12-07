@@ -60,7 +60,6 @@ body, .container, .full-width .ubermenu-nav, .container-width, .row {
 .flex-col {
     max-height: 100%;
 }
-
 .breadcrumb {
     color: #111;
     font-weight: bold;
@@ -201,7 +200,7 @@ select, .select-resize-ghost, .select2-container .select2-choice, .select2-conta
     -moz-appearance: none;
     background-image: url('http://www.w3.org/2000/svg' );
     /* background-position: right 0.45em top 50%; */
-    background-position-x: right 0.50m;
+    background-position-x: right 0.45em;
     background-position-y: top 50%;
     background-repeat: no-repeat;
     background-repeat-x: no-repeat;
@@ -269,8 +268,11 @@ div#content {
 content left
  */
 #content .left-category .shop-container ul.product-thumb {
-   width: 100px;
-    height: auto;
+    width: 100px;
+}
+#content .left-category .shop-container .list-product .product-top a.product-thumb img{
+    width: 500px;
+    height: 150px;
 }
 #content .left-category .shop-container .term-description{
     width: 100%;
@@ -285,7 +287,7 @@ content left
 
 }
 #content .left-category .shop-container .term-description p img {
-width: 100%;
+    width: 100%;
 }
 #content .left-category .shop-container .term-description p span,#content .left-category .shop-container .term-description p em {
     font-weight: 400;
@@ -329,3 +331,7 @@ button.toggle {
     padding: 4px 0px;
 }
 
+.page-item.active .page-link{
+    background-color: #34b3f1;
+    color: #34b3f1;
+}
